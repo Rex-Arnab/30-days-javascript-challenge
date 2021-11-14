@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  background: #3d3d3d;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+}
+.title {
+  font-size: 80px;
+  font-weight: bolder;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+main {
+  height: calc(100% - 50px);
+  /* background-color: blanchedalmond; */
+  margin: 1rem 5rem;
+}
+nav {
+  height: 10vh;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid green;
+}
+
+nav div {
+  width: fit-content;
+  font-size: 1.3rem;
+  color: rgb(177, 177, 177);
+}
+/* Icon Style */
+.playIcon {
+  cursor: pointer;
+  color: rgb(36, 160, 5);
+  font-size: 2rem;
+}
+div i.playIcon:hover {
+  color: rgb(108, 179, 90);
+}
+aside {
+  width: 50%;
+  float: right;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+}
+aside span {
+  font-size: 1.5rem;
+  color: rgb(177, 177, 177);
+  font-weight: bold;
+  padding: 1rem;
+  flex-grow: 2;
+}
+ul.prep {
+  flex-shrink: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(177, 177, 177);
+  font-size: 1.3rem;
+}
+section {
+  clear: both;
+  padding: 1rem;
+}
+section .mainGrid {
+  /* background-color: #333; */
+  width: min-max(100%, 100vw);
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-around;
+  grid-gap: 2rem;
+}
+.mainGrid div {
+  /* background-color: rgb(145, 16, 16); */
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.instrumentSet {
+  display: flex;
+  flex-direction: column;
+}
+.instrumentSet div {
+  display: flex;
+  justify-content: space-between;
+}
+.drumSet {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 5px;
+  height: fit-content;
+}
+.drumSet div {
+  width: 100%;
+  height: 30px;
+  background-color: #333;
+}
+/* drumset red div on odd row */
+#firstSet .drumSet div:hover {
+  background-color: rgb(7, 107, 32);
+}
+#secondSet .drumSet div:hover {
+  background-color: rgb(38, 2, 136);
+}
+#thirdSet .drumSet div:hover {
+  background-color: rgb(189, 13, 36);
+}
+#fourthSet .drumSet div:hover {
+  background-color: rgb(219, 223, 15);
+}
